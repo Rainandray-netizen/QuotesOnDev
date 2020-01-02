@@ -1,23 +1,30 @@
 <?php get_header(); ?>
 
 <?php if( have_posts() ) :?>
-
-<section id="quotes-content">
+    <div class="left-quote-container">
+        <i class="fas fa-quote-left"></i>
+    </div>
+    <section id="quotes-content">
 
 <!-- The WordPress Loop: loads post content -->
     <?php while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
-    <h3><?php the_permalink();?></h3>
-    <?php the_content(); ?>
+    <h1><?php the_content(); ?></h1>
     
-    <!-- Loop ends -->
+    <h4>-<?php the_title();echo ", " ?>
+        <a class="quoteslink" href="<?php echo get_post_meta( get_the_ID(), '_qod_quote_source_url', true );?>"><span><?php echo get_post_meta( get_the_ID(), '_qod_quote_source', true );?></span></a>
+    </h4>
+        <!-- Loop ends -->
     <?php endwhile;?>
 
-</section>
-
-    <button id="quote-button">Generate Quote</button>
+    </section>
+    <div class="right-quote-container">
+        <i class="fas fa-quote-right"></i>
+    </div>
+    <div class="button-wrapper">
+        <button id="quote-button">Show Me Another!</button>
+    </div>
 
     <!-- <?php the_posts_navigation();?> -->
 
