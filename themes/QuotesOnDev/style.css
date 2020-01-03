@@ -95,6 +95,13 @@ h4 {
   color: white;
   margin-top: 25px; }
 
+p {
+  font-family: "ExoMed";
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  margin: 15px 0px; }
+
 html {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,7 +145,8 @@ html {
       grid-column-start: 2; }
       html body #quotes-content .quoteslink {
         text-decoration: none;
-        color: #00cc00; }
+        color: #00cc00;
+        font-family: "ExoMedItalic"; }
     html body .right-quote-container {
       grid-row-start: 2;
       grid-column-start: 3;
@@ -167,3 +175,34 @@ html {
         color: #00cc00;
         font-size: 20px;
         padding: 10px 10px; }
+    html body .submit-title-wrapper h3 {
+      font-family: "ExoMed";
+      font-size: 28px;
+      line-height: 1.5;
+      color: white; }
+    html body .submit-form input {
+      background: #222222;
+      border: solid #00cc00 2px;
+      color: white;
+      border-radius: 2px;
+      font-size: 24px; }
+    html body .submit-form .quote-input {
+      font-size: 16px;
+      width: 400px;
+      height: 100px; }
+    html body .submit-form .button-wrapper {
+      grid-row-start: 3;
+      grid-column-start: 2;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      html body .submit-form .button-wrapper #submit {
+        width: 170px;
+        background-color: #222222;
+        border: solid 2px #00cc00;
+        color: #00cc00;
+        font-size: 20px;
+        padding: 10px 10px; }
+    html body .submit-content {
+      grid-column-start: 2;
+      grid-row-start: 2; }

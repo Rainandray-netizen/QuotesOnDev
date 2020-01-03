@@ -35,6 +35,7 @@ html{
             .quoteslink{
                 text-decoration: none;
                 color:#00cc00;
+                font-family:"ExoMedItalic";
             }
         }
         .right-quote-container{
@@ -60,6 +61,51 @@ html{
                 font-size:20px;
                 padding:10px 10px;
             }
+        }
+
+        
+        //submit page below
+        .submit-title-wrapper{
+            h3{
+                font-family:"ExoMed";
+                font-size:28px;
+                line-height:1.5;
+                color:white;  
+            }
+        }
+        .submit-form{
+            input{
+                background:#222222;
+                border:solid #00cc00 2px;
+                color:white;
+                border-radius:2px;
+                font-size:24px;
+            }
+            .quote-input{
+                font-size:16px;
+                width:400px;
+                height:100px;
+            }
+            .button-wrapper{
+                grid-row-start:3;
+                grid-column-start:2;
+                justify-content: flex-start;
+
+                #submit{
+                    width:170px;
+                    background-color:#222222;
+                    border:solid 2px #00cc00;
+                    color:#00cc00;
+                    font-size:20px;
+                    padding:10px 10px;
+                }
+            }
+        }
+        
+        
+        .submit-content{
+            grid-column-start:2;
+            grid-row-start:2;
         }
         
     }

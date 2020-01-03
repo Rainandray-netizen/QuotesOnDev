@@ -14,17 +14,20 @@
 
             const title = (data[quotenumber].title)
             const content = (data[quotenumber].content)
-            const permalink = (data[quotenumber].permalink)
+            const quotesURL = (data[quotenumber].quotesURL)
             const quotesSource = (data[quotenumber].quotesSource)
 
-            $("#quotes-content").html(`<h1>${content}</h1><h4>-${title}, <a class="quoteslink" href="${permalink}"><span>${quotesSource}</span></a></h4>`)
+            $("#quotes-content").html(`<h1>${content}</h1><h4>-${title}, <a class="quoteslink" href="${quotesURL}"><span>${quotesSource}</span></a></h4>`)
         })  
     })
     //add in submit button!
     $("#submit").on("click",function(event){
+        event.preventDefault
         console.log("ive been licked")
         const $title = $('#quote-title').val()
         const $content = $("#quote-content").val()
+        const $permalink =$("#quote-permalink").val()
+        const $quotesSource = $("#quote-source").val()
 
         $("input:text").val("")
 
@@ -39,7 +42,7 @@
             url: qod_data.root_url + "/wp-json/wp/v2/posts",
             data,
             beforeSend: function(xhr){
-                xhr.setRequestHeader('X-WP-Nonce', wpApiSettings.nonce);
+                xhr.setRequestHeader('X-WP-Nonce', qod_data.nonce);
             }
         })
     })
