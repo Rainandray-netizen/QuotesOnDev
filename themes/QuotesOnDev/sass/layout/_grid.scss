@@ -7,7 +7,7 @@ html{
         width:1080px;
         display:grid;
         grid-template-columns: 200px 680px 200px;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-row-gap:30px;
         .mainlogo-wrapper{
             grid-column-start:2;
@@ -98,6 +98,7 @@ html{
                     color:#00cc00;
                     font-size:20px;
                     padding:10px 10px;
+                    margin:20px 0px;
                 }
             }
         }
@@ -106,6 +107,15 @@ html{
         .submit-content{
             grid-column-start:2;
             grid-row-start:2;
+        }
+        footer{
+            grid-row-start:4;
+            grid-column-start:3;
+            .flex-footer{
+                display:flex;
+                justify-content: space-between;
+                align-items:center;
+            }
         }
         
     }
