@@ -8,7 +8,11 @@ Please Ensure you have wordpress properly installed.  Replace the wp-content fol
 
 ## Technology Used
 
-This Project involved the use of HTML, CSS, Javascript, Wordpress, Jquery, REST api, and SASS.
+This Project involved the use of PHP, HTML, CSS, Javascript, Wordpress, Jquery, REST api, and SASS.
+
+## What I learned
+
+This site was a great way to learn to use api's, something I have wanted to learn to use for some time now.  The interaction with wordpress can sometimes be frustrating, especially when custom fields are involved, but overall I think this project works as intented. Be on the lookout for my bonus quote!
 
 ### Author
 
